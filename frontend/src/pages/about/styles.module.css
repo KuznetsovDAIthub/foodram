@@ -1,0 +1,112 @@
+.content {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  text-align: left;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.section {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #4a61dd;
+  margin-bottom: 1rem;
+}
+
+.text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+.list li:before {
+  content: "•";
+  color: #4a61dd;
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+}
+
+.textItem {
+  margin: 0 0 16px;
+}
+
+.textLink {
+  color: #4a61dd;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 950px) {
+  .content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding-bottom: 80px;
+  }
+
+  .title {
+    font-size: 34px;
+  }
+
+  .subtitle {
+    font-size: 26px;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+
+  .list li {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .section {
+    padding: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.3rem;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+
+  .list li {
+    font-size: 1rem;
+  }
+}
